@@ -1,0 +1,24 @@
+.btn1.active, .btn2.active, .btn3.active{
+    /* background-color: data[0].colorit; */
+    background-color: rgba(237, 162, 73, 1)
+
+  }
+  @media all and (max-width: 700px){
+    .btn span, .btn .numer{
+        display: none;
+       }
+       .btn1.active, .btn2.active, .btn3.active{
+        background-color: rgb(35, 29, 43);
+        border-bottom: 3px solid rgba(237, 162, 73, 1);
+        width: 30vw;
+        height: 48px;
+        margin-bottom: 16px;
+        padding: 15px;
+
+      }
+      span.active, .numer.active{
+        display: none;
+       }
+     
+  }
+  

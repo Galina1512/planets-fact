@@ -1,0 +1,15 @@
+
+body{
+display: flex;
+justify-content: centern;
+}
+
+.container {
+    width: 1440px;
+    height: 1024px;
+
+    background-image: url(./assets/bg-stars.svg);
+    background-color: #231d2b;
+
+
+}
