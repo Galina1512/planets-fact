@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import { Close } from '@mui/icons-material';
 import { MenuOutlined } from '@mui/icons-material';
+import { CircleIcon } from '@mui/icons-material/Circle';
 import Mercury from './Mercury';
 import Venus from './Venus';
 import Earth from './Earth';
@@ -15,7 +16,6 @@ import Jupiter from './Jupiter';
 import Saturn from './Saturn';
 import Uranus from './Uranus';
 import Neptune from './Neptune';
-import CircleIcon from '@mui/icons-material/Circle';
 import './App.css';
 
 function App(){
