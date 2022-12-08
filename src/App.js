@@ -7,7 +7,11 @@ import {
 } from 'react-router-dom';
 import { Close } from '@mui/icons-material';
 import { MenuOutlined } from '@mui/icons-material';
+<<<<<<< HEAD
 import  CircleIcon  from '@mui/icons-material/Circle';
+=======
+import { CircleIcon } from '@mui/icons-material/Circle';
+>>>>>>> 393e5a26852bf4b61bd702b2e828b83d3faa36b4
 import Mercury from './Mercury';
 import Venus from './Venus';
 import Earth from './Earth';
