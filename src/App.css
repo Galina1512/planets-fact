@@ -62,12 +62,14 @@ body{
   width: 109px;
   height: 36px;
   left: 32px;
-  top: 10px;
+  top: 0px;
   font-family: 'Antonio', sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 36px;
-  letter-spacing: -1.05px;}
+  letter-spacing: -1.05px;
+z-index: 5;
+}
 
 .link:hover, .btn:hover{
   cursor: pointer;
@@ -190,22 +192,18 @@ text-align: left;
 border: 1px solid rgba(255, 255, 255, .2);
 }
 .btn1-earth.active, .btn2-earth.active, .btn3-earth.active{
-  /* background-color: data[2].colorit; */
   background-color: rgba(109, 46, 213, 1);
 }
 .btn1-jupiter.active, .btn2-jupiter.active, .btn3-jupiter.active {
   background-color: rgba(216, 58, 52, 1);
 }
 .btn1-mars.active, .btn2-mars.active, .btn3-mars.active{
-      /* background-color: data[3].colorit; */
       background-color: rgba(209, 76, 50, 1);
 }
 .btn1-mercury.active, .btn2-mercury.active, .btn3-mercury.active{
-     /* background-color: data[0].colorit; */
      background-color: rgba(65, 158, 187, 1)
 }
 .btn1-neptune.active, .btn2-neptune.active, .btn3-neptune.active{
-  /* background-color: data[0].colorit; */
   background-color: rgba(45, 104, 240, 1);
 }
 .btn1-saturn.active, .btn2-saturn.active, .btn3-saturn.active {
@@ -290,7 +288,7 @@ margin-top: 0;
     width: 109px;
     height: 36px;
     left: 50px;
-    top: 32px;
+    top: 0;
   }
   .slider{
     padding-right: 40px;
@@ -304,6 +302,9 @@ margin-top: 0;
 @media all and (max-width: 1000px){
   .slider{
     padding-right: 10px;
+  }
+  .brand{
+    left: 10px;
   }
   .link {
     padding: 10px 10px;
@@ -539,36 +540,38 @@ padding-left: 15px;
     position: absolute;
     display: block;
     height: 36px;
-    left: 105%;
-    /* right: 66.67%; */
-    top: -50px;
+    left: 10%;
+    top: 0px;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 22px;
     line-height: 36px;
     letter-spacing: -1.05px;
     text-transform: uppercase;
     color: #FFFFFF;  
   }
-
-    .slider{
-    top: 50px;
-    left: -110%;
-    width: 100%;
-    height: 670px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 50px;
-    z-index: 5;
-    transition: 1s ease;
-  
+  .brand p {
+    margin-top: 10px;
   }
+  .slider{
+    position: relative;
+  margin-top: 50px;
+  margin-left: -110%;
+  width: 100%;
+  height: 670px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 50px;
+  transition: 1s ease;
 
+}
   .slider.active{
-    left: 0;
+    margin-left: 0;
     background-color: rgba(35, 29, 43, 0.9);
     transition: 2s ease;
+    z-index: 50;
   }
+
   .closed{
     width: 100%;
     height: 30px;
@@ -614,7 +617,7 @@ padding-left: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -600px;
+    margin-top: -720px;
     margin-left: 0;
   }
   .isOver, .isStruct, .isGeo{
@@ -667,7 +670,7 @@ padding-left: 15px;
   .btn1-saturn, .btn2-saturn, .btn3-saturn,
   .btn1-uran, .btn2-uran, .btn3-uran,
   .btn1-venus, .btn2-venus, .btn3-venus {
-      width: 30vw;
+    width: 30vw;
     height: 48px;
     text-align: center;
     margin-bottom: 16px;

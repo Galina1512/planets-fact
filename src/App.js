@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import { Close } from '@mui/icons-material';
 import { MenuOutlined } from '@mui/icons-material';
+import  CircleIcon  from '@mui/icons-material/Circle';
 import Mercury from './Mercury';
 import Venus from './Venus';
 import Earth from './Earth';
@@ -15,7 +16,6 @@ import Jupiter from './Jupiter';
 import Saturn from './Saturn';
 import Uranus from './Uranus';
 import Neptune from './Neptune';
-import CircleIcon from '@mui/icons-material/Circle';
 import './App.css';
 
 function App(){
@@ -30,12 +30,14 @@ const showMenu = () => {
             <div className="menu-icon">
                 <MenuOutlined className="menu" onClick = {showMenu}/>
             </div>
+            <div className="brand link">
+                <p>THE PLANETS</p>
+            </div>
 
         <nav className= {active ? "slider active" : "slider"}>
             <div className="closed" onClick = {showMenu}>
                 <Close className="close" onClick = {showMenu}/>
             </div>
-            <Link to='/brand' className="link brand"> THE PLANETS</Link>
             <Link to='/' className="link"><CircleIcon className="merk"/>MERCURY</Link> 
             <Link to='/venus' className="link"><CircleIcon className="venus"/> VENUS</Link>
             <Link to='/earth' className="link"> <CircleIcon className="earth"/>EARTH</Link>
@@ -46,7 +48,6 @@ const showMenu = () => {
             <Link to='/neptune' className="link"><CircleIcon className="nept"/>NEPTUNE </Link>
         </nav>
         <Routes>
-            <Route path='/brand' element={<Mercury/>}/>
             <Route path='/' element={<Mercury/>}/>
             <Route path='/venus' element={<Venus/>}/>
             <Route path='/earth' element={<Earth/>}/>
